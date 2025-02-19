@@ -51,11 +51,9 @@ body {
   width: auto;
 }
 
-.header-text {
-  text-align: right;
-  font-size: 10pt;
-  color: #666;
-  line-height: 1.6;
+/* Mindre logga för följdsidor */
+.page:not(.first-page) .header-logo img {
+  height: 30px;
 }
 
 /* Front page content */
