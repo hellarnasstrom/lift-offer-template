@@ -1,10 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Basic A4 setup */
 html {
-  background: #525659;
+  background: #304352;
   min-height: 100%;
   padding: 30px;
 }
@@ -12,8 +13,8 @@ html {
 body {
   margin: 0 auto;
   width: 210mm;
-  background: #525659;
-  font-family: Arial, sans-serif;
+  background: #304352;
+  font-family: 'Inter', sans-serif;
 }
 
 .page {
@@ -23,12 +24,15 @@ body {
   background: white;
   padding: 20mm;
   position: relative;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 /* First page specific styles */
 .first-page {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  color: white;
 }
 
 .first-page-background {
@@ -37,8 +41,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #005F85;
-  z-index: -1;
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .first-page-background img {
@@ -52,6 +56,7 @@ body {
   margin-bottom: 40px;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .header-logo {
@@ -62,6 +67,8 @@ body {
   height: 80px;
   padding: 10px;
   background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 .header-text {
@@ -69,27 +76,38 @@ body {
   text-align: right;
   color: white;
   font-size: 12pt;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
 }
 
 /* Front page content */
 .front-page {
   text-align: center;
   color: white;
-  padding: 40px 0;
+  padding: 60px 0;
   clear: both;
+  position: relative;
+  z-index: 1;
 }
 
 .front-page h1 {
-  font-size: 48pt;
+  font-size: 64pt;
   font-weight: bold;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
 }
 
 .front-page h2 {
   font-size: 24pt;
   background: rgba(255, 255, 255, 0.1);
-  padding: 15px 30px;
+  padding: 20px 40px;
   display: inline-block;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 /* Content styles */
@@ -98,22 +116,22 @@ body {
 }
 
 h2 {
-  font-size: 16pt;
-  color: #005F85;
-  border-bottom: 1px solid #005F85;
-  margin-bottom: 10pt;
-  padding-bottom: 5px;
+  font-size: 18pt;
+  color: #243949;
+  border-bottom: 2px solid #517fa4;
+  margin-bottom: 15pt;
+  padding-bottom: 8px;
 }
 
 h3 {
   font-size: 14pt;
   color: #333;
-  margin-bottom: 8pt;
+  margin-bottom: 10pt;
 }
 
 p, li {
   font-size: 11pt;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #444;
   margin-bottom: 8pt;
 }
@@ -121,24 +139,32 @@ p, li {
 /* Table styles */
 .price-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .price-table th,
 .price-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
+  padding: 15px;
   text-align: left;
 }
 
 .price-table th {
-  background: #005F85;
+  background: linear-gradient(to right, #243949 0%, #517fa4 100%);
   color: white;
+  font-weight: 500;
 }
 
 .price-table tr:nth-child(even) {
-  background: #f8f8f8;
+  background: #f8f9fa;
+}
+
+.price-table tr:hover {
+  background: #f1f3f5;
 }
 
 /* Footer styles */
@@ -163,26 +189,36 @@ p, li {
 }
 
 .first-page .footer {
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .first-page .footer-grid > div {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Signature area */
 .signature-area {
   margin-top: 40px;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
 .signature-area > div {
-  float: left;
-  width: 45%;
-  margin-right: 5%;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .signature-line {
-  border-bottom: 1px solid #005F85;
+  border-bottom: 2px solid #517fa4;
   margin: 40px 0 10px 0;
 }
+
+/* Additional styling for non-first pages */
+.page:not(.first-page) {
+  background: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%);
+}
+
