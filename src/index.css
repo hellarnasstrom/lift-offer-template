@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,7 +95,7 @@ p, li {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 20mm;
   left: 20mm;
   right: 20mm;

@@ -1,4 +1,3 @@
-
 const Index = () => {
   return (
     <>
@@ -6,10 +5,11 @@ const Index = () => {
         {/* Första sidan */}
         <div className="header">
           <div className="header-logo">
-            <svg width="60" height="60" viewBox="0 0 60 60">
-              <rect width="60" height="60" fill="#4338ca"/>
-              <text x="30" y="40" textAnchor="middle" fill="white" fontSize="40">H</text>
-            </svg>
+            <img 
+              src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+              alt="Elevata Logo"
+              style={{ height: '60px', width: 'auto' }}
+            />
           </div>
           <div className="header-text">
             <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
@@ -50,15 +50,15 @@ const Index = () => {
         <div className="footer">
           <div className="footer-grid">
             <div>
-              <p>HissService AB</p>
+              <p>Elevata Hissaktiebolag</p>
               <p>Org.nr: 556123-4567</p>
             </div>
             <div>
               <p>Tel: 08-123 45 67</p>
-              <p>E-post: info@hissservice.se</p>
+              <p>E-post: info@elevata.se</p>
             </div>
             <div>
-              <p>www.hissservice.se</p>
+              <p>www.elevata.se</p>
               <p>Sida 1 av 3</p>
             </div>
           </div>
@@ -69,10 +69,11 @@ const Index = () => {
         {/* Andra sidan */}
         <div className="header">
           <div className="header-logo">
-            <svg width="60" height="60" viewBox="0 0 60 60">
-              <rect width="60" height="60" fill="#4338ca"/>
-              <text x="30" y="40" textAnchor="middle" fill="white" fontSize="40">H</text>
-            </svg>
+            <img 
+              src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+              alt="Elevata Logo"
+              style={{ height: '60px', width: 'auto' }}
+            />
           </div>
         </div>
 
@@ -123,15 +124,15 @@ const Index = () => {
         <div className="footer">
           <div className="footer-grid">
             <div>
-              <p>HissService AB</p>
+              <p>Elevata Hissaktiebolag</p>
               <p>Org.nr: 556123-4567</p>
             </div>
             <div>
               <p>Tel: 08-123 45 67</p>
-              <p>E-post: info@hissservice.se</p>
+              <p>E-post: info@elevata.se</p>
             </div>
             <div>
-              <p>www.hissservice.se</p>
+              <p>www.elevata.se</p>
               <p>Sida 2 av 3</p>
             </div>
           </div>
@@ -142,10 +143,11 @@ const Index = () => {
         {/* Tredje sidan */}
         <div className="header">
           <div className="header-logo">
-            <svg width="60" height="60" viewBox="0 0 60 60">
-              <rect width="60" height="60" fill="#4338ca"/>
-              <text x="30" y="40" textAnchor="middle" fill="white" fontSize="40">H</text>
-            </svg>
+            <img 
+              src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+              alt="Elevata Logo"
+              style={{ height: '60px', width: 'auto' }}
+            />
           </div>
         </div>
 
@@ -181,15 +183,15 @@ const Index = () => {
         <div className="footer">
           <div className="footer-grid">
             <div>
-              <p>HissService AB</p>
+              <p>Elevata Hissaktiebolag</p>
               <p>Org.nr: 556123-4567</p>
             </div>
             <div>
               <p>Tel: 08-123 45 67</p>
-              <p>E-post: info@hissservice.se</p>
+              <p>E-post: info@elevata.se</p>
             </div>
             <div>
-              <p>www.hissservice.se</p>
+              <p>www.elevata.se</p>
               <p>Sida 3 av 3</p>
             </div>
           </div>
