@@ -1,3 +1,4 @@
+
 const Index = () => {
   return (
     <>
@@ -23,7 +24,7 @@ const Index = () => {
           <div className="company-info">
             <div>
               <h3>Leverantör</h3>
-              <p>HissService AB<br />
+              <p>Elevata Hissaktiebolag<br />
               Hissgatan 123<br />
               123 45 Stockholm</p>
             </div>
