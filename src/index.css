@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,6 +36,19 @@ body {
 .page:first-child {
   background: white url('/lovable-uploads/a2a21779-84fb-48c1-b607-112f870c49d8.png') no-repeat center center;
   background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
 }
 
 .page:last-child {
