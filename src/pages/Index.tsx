@@ -1,3 +1,4 @@
+
 const Index = () => {
   return (
     <>
@@ -9,9 +10,10 @@ const Index = () => {
               alt="Elevata Logo"
             />
           </div>
-          <div className="header-text">
-            <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
+          <div className="header-info">
             <p>Offertnummer: 2024-001</p>
+            <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
+            <p>Sida 1 av 3</p>
           </div>
         </div>
 
@@ -32,7 +34,6 @@ const Index = () => {
             </div>
             <div>
               <p>www.elevata.se</p>
-              <p>Sida 1 av 3</p>
             </div>
           </div>
         </div>
@@ -44,20 +45,23 @@ const Index = () => {
             <img 
               src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
               alt="Elevata Logo"
-              style={{ height: '30px' }}
             />
+          </div>
+          <div className="header-info">
+            <p>Sida 2 av 3</p>
           </div>
         </div>
 
         <div className="content">
           <div className="section">
             <h2>2. Servicenivåer och responstider</h2>
-            <p>HissService AB garanterar följande responstider:</p>
+            <p>Elevata Hissaktiebolag garanterar följande responstider för att säkerställa optimal service och minimal driftstörning:</p>
             <ul>
               <li>Akuta ärenden (personer fast i hiss): Max 1 timme</li>
               <li>Driftstopp utan instängda personer: Max 4 timmar</li>
               <li>Övriga ärenden: Nästa arbetsdag</li>
             </ul>
+            <p>Vid akuta ärenden har vi jour dygnet runt, alla dagar om året. Vår personal är certifierad och har genomgått omfattande säkerhetsutbildning.</p>
           </div>
 
           <div className="section">
@@ -88,8 +92,7 @@ const Index = () => {
                 </tr>
               </tbody>
             </table>
-            <p>Betalningsvillkor: 30 dagar netto</p>
-            <p>Priserna är angivna exklusive moms</p>
+            <p>Betalningsvillkor: 30 dagar netto. Priserna är angivna exklusive moms.</p>
           </div>
         </div>
 
@@ -105,7 +108,6 @@ const Index = () => {
             </div>
             <div>
               <p>www.elevata.se</p>
-              <p>Sida 2 av 3</p>
             </div>
           </div>
         </div>
@@ -117,37 +119,39 @@ const Index = () => {
             <img 
               src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
               alt="Elevata Logo"
-              style={{ height: '30px' }}
             />
+          </div>
+          <div className="header-info">
+            <p>Sida 3 av 3</p>
           </div>
         </div>
 
         <div className="content">
           <div className="section">
             <h2>4. Avtalstid och uppsägning</h2>
-            <p>Detta avtal gäller från och med undertecknandet och löper under en initial period om 12 månader. 
+            <p>Detta serviceavtal gäller från och med undertecknandet och löper under en initial period om 12 månader. 
             Därefter förlängs avtalet automatiskt med 12 månader i taget om ingen av parterna säger upp avtalet 
             senast tre månader före avtalstidens utgång.</p>
+            
+            <p>Vid uppsägning ska detta ske skriftligen via rekommenderat brev eller e-post med mottagningsbekräftelse.</p>
           </div>
 
           <div className="section">
-            <h2>5. Underskrifter</h2>
-            <div className="signature-area">
-              <div>
-                <p><strong>För HissService AB</strong></p>
-                <div className="signature-line"></div>
-                <p>Namn:</p>
-                <p>Titel:</p>
-                <p>Datum:</p>
-              </div>
-              <div>
-                <p><strong>För Fastighets AB Exempel</strong></p>
-                <div className="signature-line"></div>
-                <p>Namn:</p>
-                <p>Titel:</p>
-                <p>Datum:</p>
-              </div>
-            </div>
+            <h2>5. Omfattning och villkor</h2>
+            <p>Serviceavtalet omfattar följande punkter:</p>
+            <ul>
+              <li>Regelbunden översyn och underhåll enligt gällande föreskrifter</li>
+              <li>Teknisk support via telefon under kontorstid</li>
+              <li>Periodiska säkerhetskontroller</li>
+              <li>Dokumentation av utförda arbeten</li>
+              <li>Prioriterad service vid driftstörningar</li>
+            </ul>
+            
+            <p>Eventuella tillkommande arbeten eller reservdelar som inte ingår i grundavtalet debiteras separat 
+            enligt gällande prislista efter godkännande från beställaren.</p>
+            
+            <p>För att säkerställa optimal funktion och säkerhet ska utrustningen endast hanteras av Elevata 
+            Hissaktiebolags auktoriserade personal.</p>
           </div>
         </div>
 
@@ -163,7 +167,6 @@ const Index = () => {
             </div>
             <div>
               <p>www.elevata.se</p>
-              <p>Sida 3 av 3</p>
             </div>
           </div>
         </div>

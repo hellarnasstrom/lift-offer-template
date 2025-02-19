@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,12 +27,6 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* First page specific styles */
-.first-page {
-  background: white;
-  color: #333;
-}
-
 /* Header styles */
 .header {
   border-bottom: 1px solid #eee;
@@ -39,7 +34,7 @@ body {
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header-logo {
@@ -47,23 +42,25 @@ body {
 }
 
 .header-logo img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
-/* Mindre logga för följdsidor */
-.page:not(.first-page) .header-logo img {
-  height: 30px;
+.header-info {
+  text-align: right;
+  font-size: 10pt;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Front page content */
 .front-page {
   text-align: center;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .front-page h1 {
-  font-size: 48pt;
+  font-size: 42pt;
   font-weight: 300;
   margin-bottom: 40px;
   color: #333;
@@ -71,7 +68,7 @@ body {
 }
 
 .front-page h2 {
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: 400;
   color: #666;
   background: #f8f9fa;
@@ -86,25 +83,25 @@ body {
 }
 
 h2 {
-  font-size: 16pt;
+  font-size: 14pt;
   color: #333;
   border-bottom: 1px solid #eee;
   margin-bottom: 16pt;
   padding-bottom: 8px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 13pt;
+  font-size: 12pt;
   color: #444;
   margin-bottom: 10pt;
   font-weight: 500;
 }
 
 p, li {
-  font-size: 11pt;
+  font-size: 10.5pt;
   line-height: 1.6;
-  color: #555;
+  color: #444;
   margin-bottom: 8pt;
 }
 
@@ -119,16 +116,16 @@ p, li {
 
 .price-table th,
 .price-table td {
-  padding: 14px;
+  padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid #eee;
+  font-size: 10.5pt;
 }
 
 .price-table th {
   background: #f8f9fa;
   color: #333;
   font-weight: 500;
-  font-size: 11pt;
 }
 
 .price-table tr:last-child td {
@@ -138,8 +135,8 @@ p, li {
 /* Footer styles */
 .footer {
   margin-top: 60px;
-  border-top: 1px solid #eee;
   padding-top: 20px;
+  border-top: 1px solid #eee;
 }
 
 .footer-grid {
@@ -151,23 +148,11 @@ p, li {
 .footer-grid > div {
   font-size: 9pt;
   color: #666;
+  line-height: 1.5;
 }
 
-/* Signature area */
-.signature-area {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.signature-area > div {
-  background: #f8f9fa;
-  padding: 24px;
-  border-radius: 4px;
-}
-
-.signature-line {
-  border-bottom: 1px solid #ddd;
-  margin: 40px 0 10px 0;
+.footer-grid p {
+  margin-bottom: 4pt;
+  font-size: 9pt;
+  color: #666;
 }
