@@ -1,57 +1,50 @@
+
 const Index = () => {
   return (
     <>
-      <div className="page">
-        <div className="page-content">
-          {/* Första sidan */}
-          <div className="header">
-            <div className="header-logo">
-              <img 
-                src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
-                alt="Elevata Logo"
-                style={{ height: '80px', width: 'auto' }}
-              />
-            </div>
-            <div className="header-text">
-              <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
-              <p>Offertnummer: 2024-001</p>
-            </div>
+      <div className="page first-page">
+        <div className="header">
+          <img 
+            src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+            alt="Elevata Logo"
+            className="header-logo"
+          />
+          <div className="header-text">
+            <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
+            <p>Offertnummer: 2024-001</p>
           </div>
+        </div>
 
-          <div className="front-page">
-            <h1>OFFERT</h1>
-            <h2>H03514 - Uppgradering Nödtelefon</h2>
-          </div>
+        <div className="front-page">
+          <h1>OFFERT</h1>
+          <h2>H03514 - Uppgradering Nödtelefon</h2>
+        </div>
 
-          <div className="footer">
-            <div className="footer-grid">
-              <div>
-                <p>Elevata Hissaktiebolag</p>
-                <p>Org.nr: 556123-4567</p>
-              </div>
-              <div>
-                <p>Tel: 08-123 45 67</p>
-                <p>E-post: info@elevata.se</p>
-              </div>
-              <div>
-                <p>www.elevata.se</p>
-                <p>Sida 1 av 3</p>
-              </div>
+        <div className="footer">
+          <div className="footer-grid">
+            <div>
+              <p>Elevata Hissaktiebolag</p>
+              <p>Org.nr: 556123-4567</p>
+            </div>
+            <div>
+              <p>Tel: 08-123 45 67</p>
+              <p>E-post: info@elevata.se</p>
+            </div>
+            <div>
+              <p>www.elevata.se</p>
+              <p>Sida 1 av 3</p>
             </div>
           </div>
         </div>
       </div>
 
       <div className="page">
-        {/* Andra sidan */}
         <div className="header">
-          <div className="header-logo">
-            <img 
-              src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
-              alt="Elevata Logo"
-              style={{ height: '80px', width: 'auto' }}
-            />
-          </div>
+          <img 
+            src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+            alt="Elevata Logo"
+            className="header-logo"
+          />
         </div>
 
         <div className="content">
@@ -117,15 +110,12 @@ const Index = () => {
       </div>
 
       <div className="page">
-        {/* Tredje sidan */}
         <div className="header">
-          <div className="header-logo">
-            <img 
-              src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
-              alt="Elevata Logo"
-              style={{ height: '80px', width: 'auto' }}
-            />
-          </div>
+          <img 
+            src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+            alt="Elevata Logo"
+            className="header-logo"
+          />
         </div>
 
         <div className="content">
