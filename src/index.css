@@ -1,7 +1,13 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* A4 print preview simulation */
+html {
+  background: #525659;
+  min-height: 100%;
+  padding: 30px;
+}
 
 @page {
   size: A4;
@@ -9,12 +15,10 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 210mm;
-  min-height: 297mm;
-  background-color: white;
-  color: black;
+  background: #525659;
   font-family: Arial, sans-serif;
 }
 
@@ -22,13 +26,14 @@ body {
   width: 210mm;
   min-height: 297mm;
   padding: 20mm;
-  margin: 0;
+  margin: 0 auto 30px auto;
   background: white;
-  page-break-after: always;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .page:last-child {
-  page-break-after: avoid;
+  margin-bottom: 0;
 }
 
 .header {
