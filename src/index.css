@@ -23,22 +23,34 @@ body {
   margin: 0 auto 30px auto;
   background: white;
   padding: 20mm;
+  position: relative;
 }
 
 /* First page specific styles */
 .first-page {
+  position: relative;
+}
+
+.first-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #005F85;
-  background-image: url('/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png');
-  background-position: center center;
+  background-image: url('../public/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-print-color-adjust: exact;
+  z-index: -1;
 }
 
 /* Basic header styles */
 .header {
   margin-bottom: 40px;
   overflow: hidden;
+  position: relative;
 }
 
 .header-logo {
