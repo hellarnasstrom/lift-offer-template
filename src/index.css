@@ -3,16 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* A4 print preview simulation */
+/* Basic A4 setup */
 html {
   background: #525659;
   min-height: 100%;
   padding: 30px;
-}
-
-@page {
-  size: A4;
-  margin: 20mm;
 }
 
 body {
@@ -25,46 +20,39 @@ body {
 .page {
   width: 210mm;
   min-height: 297mm;
-  padding: 20mm;
   margin: 0 auto 30px auto;
   background: white;
+  padding: 20mm;
 }
 
-.page.first-page {
-  background: #005F85 url('/lovable-uploads/a2a21779-84fb-48c1-b607-112f870c49d8.png') center/cover;
+/* First page specific styles */
+.first-page {
+  background: #005F85;
 }
 
+/* Basic header styles */
 .header {
-  display: table;
-  width: 100%;
   margin-bottom: 40px;
-}
-
-.header-logo {
-  display: table-cell;
-  vertical-align: top;
-  width: 100px;
 }
 
 .header-logo img {
   height: 80px;
-  width: auto;
   padding: 10px;
   background: white;
 }
 
 .header-text {
-  display: table-cell;
+  float: right;
   text-align: right;
-  vertical-align: top;
-  font-size: 12pt;
   color: white;
+  font-size: 12pt;
 }
 
+/* Front page content */
 .front-page {
-  padding: 40px 0;
   text-align: center;
   color: white;
+  padding: 40px 0;
 }
 
 .front-page h1 {
@@ -75,44 +63,38 @@ body {
 
 .front-page h2 {
   font-size: 24pt;
-  font-weight: normal;
   background: rgba(255, 255, 255, 0.1);
-  display: inline-block;
   padding: 15px 30px;
+  display: inline-block;
 }
 
-.content {
-  margin: 0;
-  padding: 0;
-}
-
+/* Content styles */
 .section {
   margin-bottom: 20mm;
 }
 
 h2 {
   font-size: 16pt;
-  margin-top: 15pt;
-  margin-bottom: 10pt;
   color: #005F85;
   border-bottom: 1px solid #005F85;
+  margin-bottom: 10pt;
   padding-bottom: 5px;
 }
 
 h3 {
   font-size: 14pt;
-  margin-top: 10pt;
-  margin-bottom: 8pt;
   color: #333;
+  margin-bottom: 8pt;
 }
 
 p, li {
   font-size: 11pt;
   line-height: 1.5;
-  margin-bottom: 8pt;
   color: #444;
+  margin-bottom: 8pt;
 }
 
+/* Table styles */
 .price-table {
   width: 100%;
   border-collapse: collapse;
@@ -127,57 +109,54 @@ p, li {
 }
 
 .price-table th {
-  background-color: #005F85;
+  background: #005F85;
   color: white;
 }
 
 .price-table tr:nth-child(even) {
-  background-color: #f8f8f8;
+  background: #f8f8f8;
 }
 
+/* Footer styles */
 .footer {
-  position: fixed;
-  bottom: 20mm;
-  left: 20mm;
-  right: 20mm;
+  margin-top: 40px;
   border-top: 1px solid #ddd;
-  padding-top: 10mm;
+  padding-top: 20px;
 }
 
 .footer-grid {
-  display: table;
   width: 100%;
-  font-size: 9pt;
-  color: #666;
 }
 
 .footer-grid > div {
-  display: table-cell;
-  width: 33.33%;
+  display: inline-block;
+  width: 33%;
+  font-size: 9pt;
+  color: #666;
+  vertical-align: top;
 }
 
 .first-page .footer {
-  border-top-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
-.first-page .footer-grid {
+.first-page .footer-grid > div {
   color: white;
 }
 
+/* Signature area */
 .signature-area {
   margin-top: 40px;
-  display: table;
-  width: 100%;
 }
 
 .signature-area > div {
-  display: table-cell;
-  width: 50%;
-  padding-right: 30px;
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+  vertical-align: top;
 }
 
 .signature-line {
   border-bottom: 1px solid #005F85;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin: 40px 0 10px 0;
 }
