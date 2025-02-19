@@ -28,83 +28,57 @@ body {
   padding: 20mm;
   margin: 0 auto 30px auto;
   background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .page.first-page {
-  background-image: url('/lovable-uploads/a2a21779-84fb-48c1-b607-112f870c49d8.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  position: relative;
-}
-
-.page.first-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 95, 133, 0.95) 0%, rgba(0, 95, 133, 0.85) 100%);
-}
-
-.page.first-page > * {
-  position: relative;
-  z-index: 1;
+  background: #005F85 url('/lovable-uploads/a2a21779-84fb-48c1-b607-112f870c49d8.png') center/cover;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: table;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 .header-logo {
+  display: table-cell;
+  vertical-align: top;
+  width: 100px;
+}
+
+.header-logo img {
   height: 80px;
   width: auto;
+  padding: 10px;
   background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
+  display: table-cell;
   text-align: right;
+  vertical-align: top;
   font-size: 12pt;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px 20px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
+  color: white;
 }
 
 .front-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(297mm - 40mm - 100px - 15mm);
-  text-align: center;
   padding: 40px 0;
+  text-align: center;
+  color: white;
 }
 
 .front-page h1 {
-  font-size: 64pt;
+  font-size: 48pt;
   font-weight: bold;
-  margin-bottom: 40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  letter-spacing: 4px;
+  margin-bottom: 30px;
 }
 
 .front-page h2 {
-  font-size: 28pt;
+  font-size: 24pt;
   font-weight: normal;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px 40px;
-  border-radius: 12px;
-  backdrop-filter: blur(5px);
+  display: inline-block;
+  padding: 15px 30px;
 }
 
 .content {
@@ -114,112 +88,96 @@ body {
 
 .section {
   margin-bottom: 20mm;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 16pt;
   margin-top: 15pt;
-  margin-bottom: 15pt;
+  margin-bottom: 10pt;
   color: #005F85;
-  border-bottom: 2px solid #005F85;
-  padding-bottom: 8px;
+  border-bottom: 1px solid #005F85;
+  padding-bottom: 5px;
 }
 
 h3 {
   font-size: 14pt;
-  margin-top: 12pt;
-  margin-bottom: 10pt;
+  margin-top: 10pt;
+  margin-bottom: 8pt;
   color: #333;
 }
 
 p, li {
   font-size: 11pt;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 8pt;
   color: #444;
 }
 
 .price-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
   margin: 20px 0;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .price-table th,
 .price-table td {
-  padding: 15px;
+  border: 1px solid #ddd;
+  padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #eee;
 }
 
 .price-table th {
   background-color: #005F85;
   color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 10pt;
-  letter-spacing: 1px;
-}
-
-.price-table tr:last-child td {
-  border-bottom: none;
 }
 
 .price-table tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #f8f8f8;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 20mm;
   left: 20mm;
   right: 20mm;
-  padding-top: 15mm;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #ddd;
+  padding-top: 10mm;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: table;
+  width: 100%;
   font-size: 9pt;
+  color: #666;
+}
+
+.footer-grid > div {
+  display: table-cell;
+  width: 33.33%;
+}
+
+.first-page .footer {
+  border-top-color: rgba(255, 255, 255, 0.3);
 }
 
 .first-page .footer-grid {
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
 }
 
 .signature-area {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  margin-top: 40px;
+  display: table;
+  width: 100%;
+}
+
+.signature-area > div {
+  display: table-cell;
+  width: 50%;
+  padding-right: 30px;
 }
 
 .signature-line {
-  border-bottom: 2px solid #005F85;
+  border-bottom: 1px solid #005F85;
   margin-top: 40px;
   margin-bottom: 10px;
-}
-
-/* Styling för innehållssidor */
-.page:not(.first-page) {
-  background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
-}
-
-.page:not(.first-page) .header {
-  margin-bottom: 60px;
-}
-
-.page:not(.first-page) .footer-grid {
-  color: #666;
 }
