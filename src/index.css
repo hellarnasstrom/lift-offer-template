@@ -3,133 +3,142 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 262 80% 50%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 262 50% 55%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 262 30% 96%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 262 80% 50%;
-    --radius: 0.75rem;
-  }
+@page {
+  size: A4;
+  margin: 20mm;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground font-inter antialiased;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  width: 210mm;
+  min-height: 297mm;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
 }
 
-.animate-in {
-  animation: fadeIn 0.5s ease-out;
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 0;
+  background: white;
+  page-break-after: always;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.page:last-child {
+  page-break-after: avoid;
 }
 
-.glass-panel {
-  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+.header {
+  position: relative;
+  height: 80px;
+  margin-bottom: 40px;
 }
 
-/* Print styles */
-@media print {
-  @page {
-    size: A4;
-    margin: 20mm;
-  }
+.header-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: auto;
+}
 
-  body {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    padding: 0;
-    background: white !important;
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
+.header-text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  font-size: 12pt;
+}
 
-  .glass-panel {
-    background: white !important;
-    border: 1px solid #eaeaea;
-    box-shadow: none !important;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
+.content {
+  margin: 0;
+  padding: 0;
+}
 
-  .min-h-screen {
-    min-height: 0 !important;
-  }
+.section {
+  margin-bottom: 20mm;
+}
 
-  .bg-gradient-to-b {
-    background: white !important;
-  }
+h1 {
+  font-size: 24pt;
+  margin-bottom: 20pt;
+  color: #333;
+}
 
-  /* Hide elements not needed in print */
-  .animate-in {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
+h2 {
+  font-size: 16pt;
+  margin-top: 15pt;
+  margin-bottom: 10pt;
+  color: #333;
+}
 
-  /* Adjust spacing for print */
-  .py-8 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-  }
+h3 {
+  font-size: 14pt;
+  margin-top: 10pt;
+  margin-bottom: 8pt;
+  color: #333;
+}
 
-  .py-12 {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
+p, li {
+  font-size: 11pt;
+  line-height: 1.5;
+  margin-bottom: 8pt;
+}
 
-  .px-6 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
+.footer {
+  position: fixed;
+  bottom: 20mm;
+  left: 20mm;
+  right: 20mm;
+  height: 15mm;
+  border-top: 1px solid #ddd;
+  padding-top: 5mm;
+  font-size: 9pt;
+  color: #666;
+}
 
-  .space-y-12 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 2rem !important;
-  }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
-  /* Ensure text is black in print */
-  * {
-    color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    color: black !important;
-  }
+.company-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 20px;
+}
 
-  /* Ensure footer stays at bottom */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
+.signature-area {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.signature-line {
+  border-bottom: 1px solid #000;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.price-table th {
+  background-color: #f8f8f8;
 }
