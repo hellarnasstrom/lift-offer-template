@@ -1,9 +1,7 @@
-
 const Index = () => {
   return (
     <>
       <div className="page">
-        <div className="page-background"></div>
         <div className="page-content">
           {/* Första sidan */}
           <div className="header">
