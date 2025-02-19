@@ -1,4 +1,3 @@
-
 const Index = () => {
   return (
     <>
@@ -9,7 +8,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
               alt="Elevata Logo"
-              style={{ height: '60px', width: 'auto' }}
+              style={{ height: '80px', width: 'auto' }}
             />
           </div>
           <div className="header-text">
@@ -18,34 +17,9 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="content">
-          <h1>Serviceavtal - Hissunderhåll</h1>
-          
-          <div className="company-info">
-            <div>
-              <h3>Leverantör</h3>
-              <p>Elevata Hissaktiebolag<br />
-              Hissgatan 123<br />
-              123 45 Stockholm</p>
-            </div>
-            <div>
-              <h3>Kund</h3>
-              <p>Fastighets AB Exempel<br />
-              Fastighetsgatan 456<br />
-              123 45 Stockholm</p>
-            </div>
-          </div>
-
-          <div className="section">
-            <h2>1. Avtalets omfattning</h2>
-            <p>Detta serviceavtal omfattar regelbundet underhåll och service av kundens hissanläggningar enligt specifikation nedan. Avtalet inkluderar följande tjänster:</p>
-            <ul>
-              <li>Regelbundna säkerhetsinspektioner</li>
-              <li>Förebyggande underhåll</li>
-              <li>Teknisk support dygnet runt</li>
-              <li>Akututryckningar vid driftstopp</li>
-            </ul>
-          </div>
+        <div className="front-page">
+          <h1>OFFERT</h1>
+          <h2>H03514 - Uppgradering Nödtelefon</h2>
         </div>
 
         <div className="footer">
@@ -73,7 +47,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
               alt="Elevata Logo"
-              style={{ height: '60px', width: 'auto' }}
+              style={{ height: '80px', width: 'auto' }}
             />
           </div>
         </div>
@@ -147,7 +121,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
               alt="Elevata Logo"
-              style={{ height: '60px', width: 'auto' }}
+              style={{ height: '80px', width: 'auto' }}
             />
           </div>
         </div>
