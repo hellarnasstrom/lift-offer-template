@@ -1,8 +1,13 @@
-
 const Index = () => {
   return (
     <>
       <div className="page first-page">
+        <div className="first-page-background">
+          <img 
+            src="/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png"
+            alt="Background"
+          />
+        </div>
         <div className="header">
           <div className="header-logo">
             <img 

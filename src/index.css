@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,21 +28,23 @@ body {
 /* First page specific styles */
 .first-page {
   position: relative;
+  overflow: hidden;
 }
 
-.first-page::before {
-  content: '';
+.first-page-background {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #005F85;
-  background-image: url('/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
+}
+
+.first-page-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Basic header styles */
