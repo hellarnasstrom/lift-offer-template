@@ -27,12 +27,22 @@ body {
 
 /* First page specific styles */
 .first-page {
-  background: #005F85;
+  background-color: #005F85;
+  background-image: url('/lovable-uploads/5ae8598c-1f09-4f6f-b4ee-c62f5e17ace7.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-print-color-adjust: exact;
 }
 
 /* Basic header styles */
 .header {
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.header-logo {
+  float: left;
 }
 
 .header-logo img {
@@ -53,6 +63,7 @@ body {
   text-align: center;
   color: white;
   padding: 40px 0;
+  clear: both;
 }
 
 .front-page h1 {
@@ -122,18 +133,20 @@ p, li {
   margin-top: 40px;
   border-top: 1px solid #ddd;
   padding-top: 20px;
+  clear: both;
 }
 
-.footer-grid {
-  width: 100%;
+.footer-grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .footer-grid > div {
-  display: inline-block;
-  width: 33%;
+  float: left;
+  width: 33.33%;
   font-size: 9pt;
   color: #666;
-  vertical-align: top;
 }
 
 .first-page .footer {
@@ -147,13 +160,13 @@ p, li {
 /* Signature area */
 .signature-area {
   margin-top: 40px;
+  overflow: hidden;
 }
 
 .signature-area > div {
-  display: inline-block;
+  float: left;
   width: 45%;
   margin-right: 5%;
-  vertical-align: top;
 }
 
 .signature-line {
