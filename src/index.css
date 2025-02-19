@@ -32,8 +32,26 @@ body {
 }
 
 .page.first-page {
-  background: #005F85;
+  background-image: url('/lovable-uploads/a2a21779-84fb-48c1-b607-112f870c49d8.png');
+  background-size: cover;
+  background-position: center;
   color: white;
+  position: relative;
+}
+
+.page.first-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 95, 133, 0.95) 0%, rgba(0, 95, 133, 0.85) 100%);
+}
+
+.page.first-page > * {
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -47,13 +65,18 @@ body {
   height: 80px;
   width: auto;
   background: white;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
   text-align: right;
   font-size: 12pt;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
 }
 
 .front-page {
@@ -67,16 +90,21 @@ body {
 }
 
 .front-page h1 {
-  font-size: 48pt;
+  font-size: 64pt;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 4px;
 }
 
 .front-page h2 {
-  font-size: 24pt;
+  font-size: 28pt;
   font-weight: normal;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
 }
 
 .content {
@@ -86,49 +114,68 @@ body {
 
 .section {
   margin-bottom: 20mm;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-  font-size: 16pt;
+  font-size: 18pt;
   margin-top: 15pt;
-  margin-bottom: 10pt;
+  margin-bottom: 15pt;
   color: #005F85;
+  border-bottom: 2px solid #005F85;
+  padding-bottom: 8px;
 }
 
 h3 {
   font-size: 14pt;
-  margin-top: 10pt;
-  margin-bottom: 8pt;
+  margin-top: 12pt;
+  margin-bottom: 10pt;
   color: #333;
 }
 
 p, li {
   font-size: 11pt;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 8pt;
+  color: #444;
 }
 
 .price-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 20px 0;
   background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .price-table th,
 .price-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
+  padding: 15px;
   text-align: left;
+  border-bottom: 1px solid #eee;
 }
 
 .price-table th {
   background-color: #005F85;
   color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.price-table tr:last-child td {
+  border-bottom: none;
 }
 
 .price-table tr:nth-child(even) {
-  background-color: #f8f8f8;
+  background-color: #f8f9fa;
 }
 
 .footer {
@@ -136,33 +183,43 @@ p, li {
   bottom: 20mm;
   left: 20mm;
   right: 20mm;
-  padding-top: 10mm;
-  border-top: 2px solid #ddd;
+  padding-top: 15mm;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
   font-size: 9pt;
-  color: #666;
 }
 
-.first-page .footer,
 .first-page .footer-grid {
-  color: white;
-  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .signature-area {
-  margin-top: 40px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 60px;
 }
 
 .signature-line {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #005F85;
   margin-top: 40px;
   margin-bottom: 10px;
+}
+
+/* Styling för innehållssidor */
+.page:not(.first-page) {
+  background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
+}
+
+.page:not(.first-page) .header {
+  margin-bottom: 60px;
+}
+
+.page:not(.first-page) .footer-grid {
+  color: #666;
 }
