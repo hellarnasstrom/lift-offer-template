@@ -195,36 +195,36 @@ li::before {
 /* Footer styles */
 .footer {
   margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid #333333;
+  padding-top: 16px;
+  border-top: 1px solid #1EAEDB;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 20px 0;
+  gap: 24px;
+  padding: 12px 0;
 }
 
 .footer-section {
-  font-size: 8.5pt;
+  font-size: 8pt;
   color: #555555;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .footer-section h4 {
   color: #333333;
   font-weight: 600;
-  margin-bottom: 10pt;
-  font-size: 9.5pt;
+  margin-bottom: 6pt;
+  font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-bottom: 1px solid #E5E5E5;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 .footer-section p {
-  margin-bottom: 4pt;
-  font-size: 8.5pt;
+  margin-bottom: 2pt;
+  font-size: 8pt;
   color: #555555;
 }
