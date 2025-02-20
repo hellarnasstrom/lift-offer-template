@@ -8,7 +8,7 @@ const FrontPage = () => {
       <PageHeader pageNumber={1} totalPages={3} />
       <div className="front-page flex flex-col items-center justify-center gap-8">
         <div className="text-center space-y-6">
-          <h1 className="text-4xl font-bold text-[#1A1F2C] tracking-tight">SERVICEAVTAL</h1>
+          <h1 className="text-4xl font-bold text-[#1A1F2C] tracking-tight">OFFERT SERVICEAVTAL</h1>
           <h2 className="text-2xl text-[#8E9196] font-medium">Uppgradering Nödtelefon System</h2>
           <p className="text-lg text-[#6E59A5] mt-8">Referensnummer: H03514</p>
         </div>
