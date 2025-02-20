@@ -11,7 +11,7 @@ interface CoverPageProps {
     documentNumber: string;
     documentDate: string;
   };
-  companyInfo: any; // Using any here since we already defined the type in PageFooter
+  companyInfo: any;
 }
 
 export const CoverPage: React.FC<CoverPageProps> = ({
@@ -31,8 +31,8 @@ export const CoverPage: React.FC<CoverPageProps> = ({
       />
       
       <div className="front-page">
-        <h1 className="text-3xl font-bold mb-4">{title}</h1>
-        <h2 className="text-xl text-gray-700">{subtitle}</h2>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
       </div>
 
       <PageFooter companyInfo={companyInfo} />

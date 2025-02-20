@@ -7,7 +7,7 @@ interface ContentPageProps {
   logoUrl: string;
   pageNumber: number;
   totalPages: number;
-  companyInfo: any; // Using any since we already defined the type in PageFooter
+  companyInfo: any;
   children: ReactNode;
 }
 
