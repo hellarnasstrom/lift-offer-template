@@ -7,10 +7,10 @@ const SecondPage = () => {
     <div className="page">
       <PageHeader pageNumber={2} totalPages={3} />
       <div className="content space-y-12">
-        <div className="section bg-[#F1F0FB] p-6 rounded-lg">
-          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">1. Servicenivåer och responstider</h2>
+        <div className="section bg-[#D3E4FD] p-6 rounded-lg">
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">2. Servicenivåer och responstider</h2>
           <div className="space-y-4">
-            <p className="text-[#6E59A5] font-medium mb-4">
+            <p className="text-[#0EA5E9] font-medium mb-4">
               För att garantera er trygghet och säkerhet erbjuder vi marknadens mest omfattande servicenivåer:
             </p>
             <div className="grid gap-4">
@@ -31,7 +31,7 @@ const SecondPage = () => {
         </div>
 
         <div className="section">
-          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">2. Priser och betalningsvillkor</h2>
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">3. Priser och betalningsvillkor</h2>
           <div className="overflow-hidden rounded-lg border border-[#E5E5E5]">
             <table className="price-table w-full">
               <thead>
@@ -43,17 +43,17 @@ const SecondPage = () => {
               </thead>
               <tbody>
                 <tr className="border-t border-[#E5E5E5]">
-                  <td className="p-4 text-[#6E59A5]">Grundservice</td>
+                  <td className="p-4 text-[#0EA5E9]">Grundservice</td>
                   <td className="p-4 font-medium">12 000</td>
                   <td className="p-4 text-[#8E9196]">Per år</td>
                 </tr>
-                <tr className="border-t border-[#E5E5E5] bg-[#F1F0FB]">
-                  <td className="p-4 text-[#6E59A5]">Akututryckning</td>
+                <tr className="border-t border-[#E5E5E5] bg-[#D3E4FD]">
+                  <td className="p-4 text-[#0EA5E9]">Akututryckning</td>
                   <td className="p-4 font-medium">1 200</td>
                   <td className="p-4 text-[#8E9196]">Per timme</td>
                 </tr>
                 <tr className="border-t border-[#E5E5E5]">
-                  <td className="p-4 text-[#6E59A5]">Extra servicebesök</td>
+                  <td className="p-4 text-[#0EA5E9]">Extra servicebesök</td>
                   <td className="p-4 font-medium">900</td>
                   <td className="p-4 text-[#8E9196]">Per timme</td>
                 </tr>
