@@ -8,7 +8,6 @@ const PageFooter = () => {
           <p className="text-[#8E9196]">ELEVATA HISS AKTIEBOLAG</p>
           <p className="text-[#8E9196]">VARBERGSVÄGEN, 2090</p>
           <p className="text-[#8E9196]">43961 FRILLESÅS</p>
-          <p className="text-[#8E9196]">Sverige</p>
         </div>
 
         <div className="footer-section space-y-2">
@@ -23,8 +22,6 @@ const PageFooter = () => {
           <p className="text-[#8E9196]">Bankgiro: 291-9462</p>
           <p className="text-[#8E9196]">Organisationsnr: 556757-6870</p>
           <p className="text-[#8E9196]">Momsreg. nr: SE556757687001</p>
-          <p className="text-[#8E9196]">IBAN: SE41 5000 0000 0500 5101 7210</p>
-          <p className="text-[#8E9196]">BIC: ESSESESXXXX</p>
         </div>
       </div>
     </div>
