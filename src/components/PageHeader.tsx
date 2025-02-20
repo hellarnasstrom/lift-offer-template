@@ -15,8 +15,6 @@ const PageHeader = ({ pageNumber, totalPages }: PageHeaderProps) => {
         />
       </div>
       <div className="header-info">
-        <p>Offertnummer: 2024-001</p>
-        <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
         <p>Sida {pageNumber} av {totalPages}</p>
       </div>
     </div>
