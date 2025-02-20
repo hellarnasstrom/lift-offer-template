@@ -8,6 +8,14 @@ const SecondPage = () => {
       <PageHeader pageNumber={2} totalPages={3} />
       <div className="content space-y-12">
         <div className="section bg-[#D3E4FD] p-6 rounded-lg">
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">Avtalets omfattning</h2>
+          <p className="text-[#1A1F2C] leading-relaxed">
+            Detta serviceavtal omfattar regelbundet underhåll, support och service av nödtelefonsystem 
+            enligt specifikation. Avtalet säkerställer optimal funktionalitet och säkerhet för era hissar.
+          </p>
+        </div>
+
+        <div className="section bg-[#D3E4FD] p-6 rounded-lg">
           <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">1. Servicenivåer och responstider</h2>
           <div className="space-y-4">
             <p className="text-[#0EA5E9] font-medium mb-4">
