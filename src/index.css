@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +20,7 @@ body {
 
 .page {
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;  /* Ändrat från min-height till height */
   margin: 0 auto 0 auto;
   background: white;
   padding: 25mm;
@@ -81,7 +82,6 @@ body {
 h2 {
   font-size: 14pt;
   color: #1EAEDB;
-  border-bottom: 1px solid #1EAEDB;
   margin-bottom: 16pt;
   padding-bottom: 10px;
   font-weight: 600;
