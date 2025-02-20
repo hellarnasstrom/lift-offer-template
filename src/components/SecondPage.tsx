@@ -6,47 +6,63 @@ const SecondPage = () => {
   return (
     <div className="page">
       <PageHeader pageNumber={2} totalPages={3} />
-      <div className="content">
-        <div className="section">
-          <h2>2. Servicenivåer och responstider</h2>
-          <p>Elevata Hissaktiebolag garanterar följande responstider för att säkerställa optimal service och minimal driftstörning:</p>
-          <ul>
-            <li>Akuta ärenden (personer fast i hiss): Max 1 timme</li>
-            <li>Driftstopp utan instängda personer: Max 4 timmar</li>
-            <li>Övriga ärenden: Nästa arbetsdag</li>
-          </ul>
-          <p>Vid akuta ärenden har vi jour dygnet runt, alla dagar om året. Vår personal är certifierad och har genomgått omfattande säkerhetsutbildning.</p>
+      <div className="content space-y-12">
+        <div className="section bg-[#F1F0FB] p-6 rounded-lg">
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">2. Servicenivåer och responstider</h2>
+          <div className="space-y-4">
+            <p className="text-[#6E59A5] font-medium mb-4">
+              För att garantera er trygghet och säkerhet erbjuder vi marknadens mest omfattande servicenivåer:
+            </p>
+            <div className="grid gap-4">
+              <div className="bg-white p-4 rounded shadow-sm">
+                <h4 className="font-semibold text-[#1A1F2C]">Prioritet 1: Akuta ärenden</h4>
+                <p className="text-[#8E9196]">Personer fast i hiss - Responstid max 1 timme</p>
+              </div>
+              <div className="bg-white p-4 rounded shadow-sm">
+                <h4 className="font-semibold text-[#1A1F2C]">Prioritet 2: Driftstopp</h4>
+                <p className="text-[#8E9196]">Utan instängda personer - Responstid max 4 timmar</p>
+              </div>
+              <div className="bg-white p-4 rounded shadow-sm">
+                <h4 className="font-semibold text-[#1A1F2C]">Prioritet 3: Övriga ärenden</h4>
+                <p className="text-[#8E9196]">Service och underhåll - Nästa arbetsdag</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="section">
-          <h2>3. Priser och betalningsvillkor</h2>
-          <table className="price-table">
-            <thead>
-              <tr>
-                <th>Tjänst</th>
-                <th>Pris (SEK)</th>
-                <th>Enhet</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Grundservice</td>
-                <td>12 000</td>
-                <td>Per år</td>
-              </tr>
-              <tr>
-                <td>Akututryckning</td>
-                <td>1 200</td>
-                <td>Per timme</td>
-              </tr>
-              <tr>
-                <td>Extra servicebesök</td>
-                <td>900</td>
-                <td>Per timme</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Betalningsvillkor: 30 dagar netto. Priserna är angivna exklusive moms.</p>
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">3. Priser och betalningsvillkor</h2>
+          <div className="overflow-hidden rounded-lg border border-[#E5E5E5]">
+            <table className="price-table w-full">
+              <thead>
+                <tr className="bg-[#F8F9FA]">
+                  <th className="text-left p-4 text-[#1A1F2C] font-semibold">Tjänst</th>
+                  <th className="text-left p-4 text-[#1A1F2C] font-semibold">Pris (SEK)</th>
+                  <th className="text-left p-4 text-[#1A1F2C] font-semibold">Enhet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-[#E5E5E5]">
+                  <td className="p-4 text-[#6E59A5]">Grundservice</td>
+                  <td className="p-4 font-medium">12 000</td>
+                  <td className="p-4 text-[#8E9196]">Per år</td>
+                </tr>
+                <tr className="border-t border-[#E5E5E5] bg-[#F1F0FB]">
+                  <td className="p-4 text-[#6E59A5]">Akututryckning</td>
+                  <td className="p-4 font-medium">1 200</td>
+                  <td className="p-4 text-[#8E9196]">Per timme</td>
+                </tr>
+                <tr className="border-t border-[#E5E5E5]">
+                  <td className="p-4 text-[#6E59A5]">Extra servicebesök</td>
+                  <td className="p-4 font-medium">900</td>
+                  <td className="p-4 text-[#8E9196]">Per timme</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-[#8E9196] text-sm">
+            Betalningsvillkor: 30 dagar netto. Alla priser är angivna exklusive moms.
+          </p>
         </div>
       </div>
       <PageFooter />
