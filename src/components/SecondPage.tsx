@@ -8,7 +8,7 @@ const SecondPage = () => {
       <PageHeader pageNumber={2} totalPages={3} />
       <div className="content space-y-12">
         <div className="section bg-[#D3E4FD] p-6 rounded-lg">
-          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">2. Servicenivåer och responstider</h2>
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">1. Servicenivåer och responstider</h2>
           <div className="space-y-4">
             <p className="text-[#0EA5E9] font-medium mb-4">
               För att garantera er trygghet och säkerhet erbjuder vi marknadens mest omfattande servicenivåer:
@@ -31,7 +31,7 @@ const SecondPage = () => {
         </div>
 
         <div className="section">
-          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">3. Priser och betalningsvillkor</h2>
+          <h2 className="text-[#1A1F2C] text-xl font-semibold mb-6">2. Priser och betalningsvillkor</h2>
           <div className="overflow-hidden rounded-lg border border-[#E5E5E5]">
             <table className="price-table w-full">
               <thead>
