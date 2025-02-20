@@ -20,7 +20,7 @@ body {
 .page {
   width: 210mm;
   min-height: 297mm;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   background: white;
   padding: 25mm;
   position: relative;
@@ -31,7 +31,6 @@ body {
 
 /* Header styles */
 .header {
-  border-bottom: 1px solid #1EAEDB;
   margin-bottom: 40px;
   padding-bottom: 20px;
   display: flex;
@@ -71,7 +70,7 @@ body {
 /* Content styles */
 .content {
   flex-grow: 1;
-  padding-bottom: 80mm;
+  padding-bottom: 60mm;
 }
 
 .section {
@@ -163,7 +162,6 @@ li::before {
 .footer {
   margin-top: auto;
   padding-top: 12px;
-  border-top: 1px solid #1EAEDB;
 }
 
 .footer-grid {
