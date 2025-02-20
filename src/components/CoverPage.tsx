@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { PageHeader } from './PageHeader';
-import { PageFooter } from './PageFooter';
+import PageHeader from './PageHeader';
+import PageFooter from './PageFooter';
 
 interface CoverPageProps {
   logoUrl: string;
@@ -14,7 +14,7 @@ interface CoverPageProps {
   companyInfo: any;
 }
 
-export const CoverPage: React.FC<CoverPageProps> = ({
+const CoverPage: React.FC<CoverPageProps> = ({
   logoUrl,
   title,
   subtitle,
@@ -24,10 +24,8 @@ export const CoverPage: React.FC<CoverPageProps> = ({
   return (
     <div className="page first-page">
       <PageHeader 
-        logoUrl={logoUrl}
         pageNumber={1}
         totalPages={3}
-        documentInfo={documentInfo}
       />
       
       <div className="front-page">
@@ -35,7 +33,9 @@ export const CoverPage: React.FC<CoverPageProps> = ({
         <h2>{subtitle}</h2>
       </div>
 
-      <PageFooter companyInfo={companyInfo} />
+      <PageFooter />
     </div>
   );
 };
+
+export default CoverPage;
