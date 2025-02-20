@@ -1,3 +1,4 @@
+
 const Index = () => {
   return (
     <>
@@ -57,6 +58,8 @@ const Index = () => {
             />
           </div>
           <div className="header-info">
+            <p>Offertnummer: 2024-001</p>
+            <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
             <p>Sida 2 av 3</p>
           </div>
         </div>
@@ -141,6 +144,8 @@ const Index = () => {
             />
           </div>
           <div className="header-info">
+            <p>Offertnummer: 2024-001</p>
+            <p>Dokumentdatum: {new Date().toLocaleDateString("sv-SE")}</p>
             <p>Sida 3 av 3</p>
           </div>
         </div>
