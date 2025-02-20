@@ -31,7 +31,7 @@ body {
 
 /* Header styles */
 .header {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #1EAEDB;
   margin-bottom: 40px;
   padding-bottom: 20px;
   display: flex;
@@ -70,7 +70,7 @@ body {
 
 .front-page h1 {
   font-size: 52pt;
-  color: #1a1a1a;
+  color: #1EAEDB;
   margin-bottom: 50px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -82,7 +82,7 @@ body {
   display: block;
   width: 80px;
   height: 2px;
-  background: #333333;
+  background: #1EAEDB;
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -90,14 +90,14 @@ body {
 }
 
 .front-page h2 {
-  font-size: 16pt;
+  font-size: 14pt;
   color: #444444;
   font-weight: 400;
-  padding: 24px 48px;
-  border: 1px solid #E5E5E5;
+  padding: 20px 32px;
+  border: 1px solid #D3E4FD;
   display: inline-block;
   background: #FFFFFF;
-  max-width: 80%;
+  max-width: 70%;
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
@@ -114,8 +114,8 @@ body {
 
 h2 {
   font-size: 14pt;
-  color: #333333;
-  border-bottom: 1px solid #333333;
+  color: #1EAEDB;
+  border-bottom: 1px solid #1EAEDB;
   margin-bottom: 16pt;
   padding-bottom: 10px;
   font-weight: 600;
