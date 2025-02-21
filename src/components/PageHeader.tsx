@@ -15,7 +15,7 @@ const PageHeader = ({ pageNumber, totalPages }: PageHeaderProps) => {
         />
       </div>
       <div className="header-info">
-        <p>Sida {pageNumber} av {totalPages}</p>
+        <p>2024-001 : Sida {pageNumber} av {totalPages}</p>
       </div>
     </div>
   );
